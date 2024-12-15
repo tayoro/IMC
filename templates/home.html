@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}home{% endblock %}
+{% block bodyId %}homePage{% endblock %}
+
+{% block content %}
+ <div class="home_form">
+        <div class="home_form_contour">
+                <h3> inscription <h3/>
+                <form action="???" method="post">
+                        {%csrf_token%}
+                        {{ personForm.as_p }} <!-- reproduire le formulaire PersonForm dans html pour l'utilisation--> 
+                        <input type="submit" value="imc" id="savec"/>
+                </from>
+        <div/>
+</div>
+
+{% comment %} <div class="home_info">
+        <p>kpezkpkpzkpkzekpropjt zeoôrzoorôorôre</p>
+        <p>iofeooikepok ,pd,poepo,peopoj,o,oe,o,</p> 
+</div>
+
+<div class="home_photoCouv">
+       <img src="{% static 'img/imc.jpg'%}"/> 
+</div> {% endcomment %}
+
+{%endblock%}
+
+{% comment %} <form action="toutPerson" method="post">      
+                <a href="{% url 'toutPerson' %}">voir tout les inscrits </a>
+        </from>
+        <br/>
+
+        <form action="toutPerson" method="post">     
+                <a href="{% url 'showPerson' %}"> verification </a>
+        </from> {% endcomment %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Connexion{% endblock %}
+{% block bodyId %}connexionPage{% endblock %}
+
+{% block content %}
+<div class="connexion_form">
+    <div class="connexion_form_contour">
+        <h3> Connexion <h3/>
+        <form method="post">
+
+            {% csrf_token %}
+
+            Entre le user : <input type="text" name="user"/> <br/>
+            Entre le nom : <input type="text" name="nom"/> <br/>
+            <button type="submit"> IMC </button>
+
+        </form>
+    <div/>
+</div>
+<p>{{message}}</p>
+
+{% endblock%}

@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block title %}monResultat{% endblock %}
+{% block bodyId %}monResultat{% endblock %}
+
+{% comment %} {% block content %}
+
+   
+</table>
+{%endblock%}
+
+{% block content_1 %}
+<table>
+    <tr>
+        <th>{{dernierePerson.user}}</th>
+        <th>{{dernierePerson.nom}}</th>
+        <th>{{dernierePerson.prenom}}</th>
+        <th>{{dernierePerson.taille}}</th>
+        <th>{{dernierePerson.poids}}</th>
+        <th>{{resultat}}</th>
+
+    </tr>
+   
+</table>
+{%endblock%} {% endcomment %}
+
+{% block navContent %} 
+    
+{% endblock %}
+
+{% block content %}
+
+    {% comment %} <table>
+        <tr>
+            <th>{{person.user}}</th>
+            <th>{{person.nom}}</th>
+            <th>{{person.prenom}}</th>
+            <th>{{person.taille}}</th>
+            <th>{{person.poids}}</th>
+    
+        </tr>
+       
+        </table>  {% endcomment %}
+    <div class="conteneur_reShow">
+        <div class="reShowPerson_info"> 
+            <div class="titre_info">
+                <p>information</p>
+            </div>   
+            <table>
+                <tr>
+                    <td class="col_1"><p>user :</p></td>
+                    <td class="col_2"><p>{{dernierePerson.user}}</p></td>
+                </tr>
+                <tr>
+                    <td class="col_1"><p>Nom :</p></td>
+                    <td class="col_2"><p>{{dernierePerson.nom}}</p></td>
+                </tr>
+                <tr>
+                    <td class="col_1"><p>Prenom :</p></td>
+                    <td class="col_2"><p>{{dernierePerson.prenom}}</p></td>
+                </tr>
+                <tr>
+                    <td class="col_1"><p>Poids :</p></td>
+                    <td class="col_2"><p>{{dernierePerson.poids}} kg</p></td>
+                </tr>
+                <tr>
+                    <td class="col_1"><p>Taille :<p></td>
+                    <td class="col_2"><p>{{dernierePerson.taille}} m</p></td>
+                </tr>
+                <tr>
+                    <td class="col_1"><p>iMC :</p></td>
+                    <td class="col_2"><p class="imc">{{imc}}</p></td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="reShowPerson_explication">
+            <div class="re_deplace">
+                <div class="def">
+                    <p>L’indice de masse corporelle (IMC) permet d’évaluer rapidement votre corpulence simplement avec votre poids et votre taille, quel que soit votre sexe. Calculez rapidement votre IMC et découvrez dans quelle catégorie vous vous situez.</p>
+                </div>
+                <table>
+                    <tr>
+                        <td class="col_1">Indice de masse corporelle (IMC) </td>
+                        <td class="col_2">Interpretation d'apres l'OMS</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">Mois de 18,5 </td>
+                        <td class="col_2">insuffisant ponderable (maigreur)</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">18,5 à 25</td>
+                        <td class="col_2">Corpulance normale</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">25 à 30</td>
+                        <td class="col_2">surpoids</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">30 à 35</td>
+                        <td class="col_2">obésité moderée</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">35 à 40</td>
+                        <td class="col_2">obésité sévère</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">Plus de 40</td>
+                        <td class="col_2">obésité massive</td>
+                    </tr>
+                </table>
+                <div class="def_1">
+                    <p>L’indice de masse corporelle (IMC) est le seul indice validé par l’Organisation mondiale de la santé pour évaluer la corpulence d’un individu et donc les éventuels risques pour la santé. L’IMC permet de déterminer si l’on est situation de maigreur, de surpoids ou d’obésité par exemple.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock%}
+
+{% block content_1 %}
+
+        <div class="img"><div/>
+    
+{%endblock%}
+
+
+
+
+    
+    

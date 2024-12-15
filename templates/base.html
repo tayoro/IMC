@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <title>
+            imc - {% block title %}Bienvenue{% endblock %}
+        </title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        
+        </script>
+    </head>
+    
+    <body  {% comment %} style="background-Image:url('{% static 'img/imc.jpg'%}')"; {% endcomment %}     id="{% block bodyId %}genericPage{% endblock %}">
+
+
+        <nav>
+           {% block navContent %}
+
+           <div class="base_symbole">
+                <p> <a href="{% url 'home' %}">imc </a> </p>
+           </div>
+
+           <div class="base_menu"> 
+                <ul>
+                    <li><a href="{% url 'home' %}">inscription </a> </p></li>
+                    <li><a href="{% url 'showPerson' %}"> connexion </a></li>
+                    <li><a href="{% url 'toutPerson' %}"> inscrits </a></li>
+                </ul>
+            </div>
+
+           {% endblock %} 
+        </nav>
+
+        <section id="conteneur_section">
+
+            <section id="content">
+                {% block content %}{% endblock %}
+            </section>
+
+            <section id="content_1">
+                {% block content_1 %}{% endblock %}
+            </section>
+        <section/>
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}toutConnexion{% endblock %}
+{% block bodyId %}toutConnexion{% endblock %}
+
+
+{% block content %}
+        <div class="user">
+            {% for personne in lesPersons%}
+                    <div class="toutConnexion_cadre">
+                        <div class="toutConnexion_contour">  
+                            <div class="particulier"> 
+                                <div class="nom"> {{personne.nom}} </div>
+                                <div class="dateCreation">{{personne.date}}</div>  
+                            </div>  
+                        </div>
+                    </div>
+            {% endfor %}
+        </div>
+{% endblock%}

@@ -1,0 +1,506 @@
+lord static
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    color: #000333; 
+    font-family: "Lucida Grande", Tahoma, Verdana, Arial;
+    background-color:rgb(255, 255, 255);
+}
+
+body li{
+    list-style-type: none; 
+}
+
+nav{
+    background-color: rgb(19, 19, 20);
+    opacity: 0.8;
+    width: 100%;
+    height: 46px;
+ 
+}
+nav div{
+    display: inline-block; 
+    vertical-align: top;
+    position: relative; 
+    left: 50px;
+}
+nav .base_menu{
+    text-align: end; 
+    position: absolute; 
+    left: 1000px;  
+}
+nav div a {
+    text-decoration: none;
+    color: rgb(198, 192, 192);
+
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    right:1px
+}
+nav ul li{
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+   background-color: rgb(212, 192, 192);
+   color: rgb(5, 3, 0);
+}
+
+/* homePage */
+#homePage{
+    background: url('/static/img/imc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+#homePage #content{
+    text-align: center;
+
+}
+
+#homePage #content .home_form {
+   
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 700px;
+    padding-bottom:47px;
+    padding-top:70px;
+
+}
+
+
+#homePage #content .home_form .home_form_contour{
+    
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    height: 300px;
+    padding-bottom:200px;
+    padding-top:69px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: w;
+    box-shadow: 1px 2px 6px black;
+    opacity: 0.6;
+    position: relative;
+    top: 7px;
+    
+    
+}
+
+.home_form form {
+   
+    width: 185px;
+    padding: 10px;
+    position: relative;
+    left:148px;
+    
+}
+
+/* page showPerson */
+#connexionPage
+{   
+    background: url('/static/img/imc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#connexionPage #content{
+    text-align: center;
+    
+}
+
+#connexionPage #content .connexion_form
+{
+    
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 441px;
+    padding-bottom:109px;
+    padding-top:80px;
+
+}
+
+#connexionPage #content .connexion_form .connexion_form_contour
+{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 217px;
+    padding-bottom:130px;
+    padding-top:150px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(171, 154, 154);
+    box-shadow: 1px 2px 6px black;
+    opacity: 0.6;
+}
+
+
+/* .home_info{
+  padding-bottom: 611px;
+} 
+
+.home_photoCouv img{
+    width: 470px;
+    height: 690px;
+    background-size: cover;
+    background-position: center;
+
+} */
+
+/*page toutPersonn.html */
+#toutConnexion{
+    background-color: rgb(248, 248, 244);
+    color: rgb(19, 19, 4);
+}
+#toutConnexion nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#toutConnexion #conteneur_section {
+    width: auto;
+}
+#toutConnexion #conteneur_section #content{
+    width: 100%;
+    padding-top: 100px;
+    
+    
+}
+#toutConnexion #conteneur_section #content .user{
+    width: 1267px;
+    position: relative;
+    left: 46px;
+}
+#toutConnexion #conteneur_section #content .toutConnexion_cadre{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px slategray;
+    
+}
+
+#toutConnexion #conteneur_section #content .toutConnexion_cadre .toutConnexion_contour {
+    width: 180px;
+    height: 200px;
+    margin: 8px;
+    position: relative;
+    left: 25px;
+    top: 12px;
+    box-shadow: 0px 0px 4px slategray;
+}
+#toutConnexion #conteneur_section #content .toutConnexion_cadre .toutConnexion_contour .particulier{
+    border: 1px rgb(72, 57, 187) solid;
+    padding-top: 15px;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    left: 13px;
+    top:8px;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+}
+#toutConnexion #conteneur_section #content .toutConnexion_cadre .toutConnexion_contour .particulier .dateCreation{
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+/*page reShowPerson.html*/
+#reshowPerson {
+    background-color: #000333;
+}
+#reShowPerson nav {
+    height: 0;
+}
+
+#reShowPerson #conteneur_section{
+    width: auto;
+    display: flex;
+    height: 764px;
+
+}
+#reShowPerson #conteneur_section p{
+    color: rgb(248, 248, 244);
+}
+
+#reShowPerson #content
+{
+ width: 70%;
+}
+
+#reShowPerson #content .conteneur_reShow{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(204, 202, 213);
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_info
+{
+    width: 50%;
+    height: 100%;
+
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_info .titre_info{
+    position: relative;
+    top: 130px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline rgb(248, 248, 244);
+}
+
+#reShowPerson #content .conteneur_reShow .reShowPerson_info table
+{
+    border-spacing: 10px;
+    position: absolute;
+    left: 68px;
+    top: 220px;
+    
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_info table p
+{
+    margin: 10px;
+    font-size: 1.4em;
+    font-family: 'Times New Roman', Times, serif;   
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_info table .imc {
+    font-style: oblique;
+    color: brown;
+
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_info .col_1{
+    text-align: left;
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_info .col_2{
+    text-align: left;
+}
+
+#reShowPerson #content .conteneur_reShow .reShowPerson_explication
+{
+    width: 80%;
+    height: 100%;  
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_explication div
+{
+    word-wrap: break-word;
+    margin: 10px;
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_explication .re_deplace
+{
+    position: relative;
+    top:107px;
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_explication .def_1
+{
+    position: relative;
+    top: 100px;
+}
+
+#reShowPerson #content .conteneur_reShow .reShowPerson_explication table
+{
+    border-spacing: 10px;
+    position: relative;
+    top: 55px;
+    color: rgb(248, 248, 244);
+}
+
+
+#reShowPerson #content .conteneur_reShow .reShowPerson_explication .col_1{
+    text-align: right;
+}
+#reShowPerson #content .conteneur_reShow .reShowPerson_explication .col_2{
+    text-align: left;
+}
+
+#reShowPerson #content_1 
+{
+    
+    width: 40%;
+    height: 100%;
+    
+}
+
+#reShowPerson #content_1 .img
+{   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-image: url('/static/img/imc.jpg');
+}
+
+/*#reShowPerson section {
+    
+}
+
+#reShowPerson #content_1{
+    border: 1px red solid;
+    height:300px;
+    text-align: center;
+    background: url('/static/img/imc.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+} */
+
+
+
+/* page resultat.html */
+
+/*faire le copié coller du CSS en changeant 
+le id du body qui est #reShowPerson en #monResultat */
+
+#monResultat #conteneur_section{
+    width: auto;
+    display: flex;
+    height: 764px;
+}
+#monResultat #conteneur_section p{
+    color: rgb(248, 248, 244);
+}
+
+#monResultat #content
+{
+ width: 70%;
+}
+
+#monResultat #content .conteneur_reShow{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(7, 2, 28);
+}
+#monResultat #content .conteneur_reShow .reShowPerson_info
+{
+    width: 50%;
+    height: 100%;
+
+}
+#monResultat #content .conteneur_reShow .reShowPerson_info .titre_info{
+    position: relative;
+    top: 130px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline rgb(248, 248, 244);
+}
+
+#monResultat #content .conteneur_reShow .reShowPerson_info table
+{
+    border-spacing: 10px;
+    position: absolute;
+    left: 68px;
+    top: 220px;
+    
+}
+#monResultat #content .conteneur_reShow .reShowPerson_info table p
+{
+    margin: 10px;
+    font-size: 1.4em;
+    font-family: 'Times New Roman', Times, serif;  
+    overflow: hidden; 
+}
+#monResultat #content .conteneur_reShow .reShowPerson_info table .imc {
+    font-style: oblique;
+    color: brown;
+
+}
+#monResultat #content .conteneur_reShow .reShowPerson_info .col_1{
+    text-align: left;
+}
+#monResultat #content .conteneur_reShow .reShowPerson_info .col_2{
+    text-align: left;
+}
+
+#monResultat #content .conteneur_reShow .reShowPerson_explication
+{
+    width: 80%;
+    height: 100%;  
+}
+#monResultat #content .conteneur_reShow .reShowPerson_explication div
+{
+    word-wrap: break-word;
+    margin: 10px;
+}
+#monResultat #content .conteneur_reShow .reShowPerson_explication .re_deplace
+{
+    position: relative;
+    top:107px;
+}
+#monResultat #content .conteneur_reShow .reShowPerson_explication .def_1
+{
+    position: relative;
+    top: 100px;
+}
+
+#monResultat #content .conteneur_reShow .reShowPerson_explication table
+{
+    border-spacing: 10px;
+    position: relative;
+    top: 55px;
+    color: rgb(248, 248, 244);
+}
+
+
+#monResultat #content .conteneur_reShow .reShowPerson_explication .col_1{
+    text-align: right;
+}
+#monResultat #content .conteneur_reShow .reShowPerson_explication .col_2{
+    text-align: left;
+}
+
+#monResultat #content_1 
+{
+    border: 1px rgb(246, 255, 0) solid;
+    width: 40%;
+    height: 100%;
+    
+}
+
+#monResultat #content_1 .img
+{   
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100%;
+    background-image: url('/static/img/imc.jpg');
+}
+
+
+
+
+
